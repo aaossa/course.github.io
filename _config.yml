@@ -1,0 +1,37 @@
+# Main settings
+title: IICxxxx - Course @ UC
+base_url: /
+short_title: IICxxx @ UC
+description: >-
+  IICxxxx Course @ Pontificia Universidad Católica de Chile
+
+# GitHub settings
+org_name: IICxxxx
+org_syllabus: Syllabus
+org_url: https://github.com/IICxxxx # Avoid using '/' at the end 
+
+# Fixed links
+fixed_links:
+  - description: Ir al <strong>Foro</strong>
+    url: https://foro.com
+  - description: Ir al curso <strong>Syllabus</strong>
+    url: https://syllabus.com
+  - description: Leer el <strong>Material</strong>
+    url: http://material.com
+
+# Custom settings
+# Calendar
+# https://support.google.com/calendar/answer/41207 (Just copy the 'src' attribute)
+# You should also download the .ics file, place it at root and name it "calendar.ics"
+calendar: >- 
+  https://calendar.google.com/calendar/embed?src=uc.cl_7128cjucjsa53m6n95o8g2e4c4%40group.calendar.google.com&ctz=America/Santiago
+# Contact form
+# Just copy the 'src' attribute
+contact_form: >-
+  https://docs.google.com/forms/d/e/1FAIpQLSeao9G26lUBRNhjMVHK-kvQ12hTo9Frklp_Q-a9zCIgh2LaNg/viewform?embedded=true
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

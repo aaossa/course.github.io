@@ -1,0 +1,29 @@
+<header>
+    <h1><a href="{{ site.base_url }}">{{ site.short_title }}</a></h1>
+    <p>{{ site.description }}</p>
+    <p class="view"><a href="{{ site.org_url }}">Ver el Curso en GitHub <small>{{ site.org_name }} organization</small></a></p>
+    
+    <!-- Fixed links -->
+    <ul class="fixed-links">
+        {% for link in site.fixed_links %}
+        <li><a href="{{ link.url }}">{{ link.description }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <!-- Pages links (auto-generated)-->
+    <ul class="pages-links">
+        {% for p in site.pages %}
+        {% if page.url != p.url %}
+        <li><a href="{{ p.url }}"><strong>{{ p.title }}</strong></a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <select class="pages-links" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="" selected="selected">{{ page.title }}</option>
+        {% for p in site.pages %}
+        {% if page.url != p.url %}
+        <option value="{{ p.url }}"><strong>{{ p.title }}</strong></a></option>
+        {% endif %}
+        {% endfor %}
+    </select>
+</header>
